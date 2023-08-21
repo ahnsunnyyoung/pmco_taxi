@@ -1,0 +1,66 @@
+
+.logo {
+  width: 180px;
+}
+
+.mat-icon {
+  visibility: hidden;
+}
+
+.mat-toolbar{
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  justify-content: space-between;
+  background: none;
+  color: white;
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+}
+
+.nav-link{
+  color : white;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.navbar > .active  a{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.example-container {
+  height: 100vh;
+  display: inherit;
+  background: none;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  .mat-icon {
+    visibility: visible;
+  }
+}

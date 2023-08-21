@@ -1,0 +1,33 @@
+<mat-drawer-container class="example-container" autosize>
+
+<mat-toolbar>
+  <a href="/"><img src="/assets/images/pmco_logo.png" class="logo"/></a>
+  
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+        Toggle extra text
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  
+
+  <ul class="navbar">
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['about']">About</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['tour']">Tour</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['book']">Book</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['contact']">Contact</a>
+    </li>
+  </ul>
+ </mat-toolbar>
+</mat-drawer-container>
