@@ -1,0 +1,36 @@
+@import "../../vars";
+
+.bg-image {
+  position: relative; 
+  padding: 10%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+// to not affect text
+.bg-image::before {
+  content: "";
+  background-image: url("/assets/images/example_1.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.header-text {
+  position: relative;
+  color: $white-color;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
